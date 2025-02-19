@@ -5,11 +5,3 @@
   --font-poiret-one: "Poiret One", serif;
   --font-cormorant: "Cormorant", serif;
 }
-
-@font-face {
-  font-family: Philosopher;
-  font-style: normal;
-  font-weight: 200 700;
-  font-display: swap;
-  src: url("./fonts/ofont.ru_Philosopher.ttf") format("ttf");
-}
