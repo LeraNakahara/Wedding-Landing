@@ -721,6 +721,9 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
+  .m-auto {
+    margin: auto;
+  }
   .mt-\[-25px\] {
     margin-top: -25px;
   }
@@ -1284,9 +1287,6 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
-  .gap-\[10px\] {
-    gap: 10px;
-  }
   .gap-\[15px\] {
     gap: 15px;
   }
@@ -1724,11 +1724,11 @@
   .px-\[50px\] {
     padding-inline: 50px;
   }
-  .px-\[60px\] {
-    padding-inline: 60px;
-  }
   .py-14 {
     padding-block: calc(var(--spacing) * 14);
+  }
+  .py-\[30px\] {
+    padding-block: 30px;
   }
   .py-\[40px\] {
     padding-block: 40px;
@@ -1738,9 +1738,6 @@
   }
   .py-\[5px\] {
     padding-block: 5px;
-  }
-  .py-\[30px\] {
-    padding-block: 30px;
   }
   .py-\[60px\] {
     padding-block: 60px;
@@ -1812,9 +1809,6 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
-  .text-\[12px\] {
-    font-size: 12px;
-  }
   .text-\[14px\] {
     font-size: 14px;
   }
@@ -1838,9 +1832,6 @@
   }
   .text-\[27px\] {
     font-size: 27px;
-  }
-  .text-\[40px\] {
-    font-size: 40px;
   }
   .text-\[50px\] {
     font-size: 50px;
