@@ -157,20 +157,49 @@
 
     <div class="flex flex-col items-center justify-center font-cormorant m-auto uppercase gap-[15px] py-[40px] px-[40px]">
       <p class = "text-[27px]">Детали</p> 
-      <div class = "flex flex-col gap-[50px]">
-        <p class = "text-center text-[14px]">Нам бы хотелось, чтобы в этот день сердца были легкими, души — открытыми, настроение — праздничным, а подарки — упакованными в конверты.</p>
-        <span></span>
-          <p class = "text-center text-[14px]">По всем вопросам, связанным с торжественным вечером и сюрпризами, обращаться к нашему организатору</p>
+      <div class="flex flex-col items-center gap-[20px] relative">
+        <div class="flex flex-col justify-center items-center">
+          <p class="text-center text-[14px] pb-[20px]">Нам бы хотелось, чтобы в этот день сердца были легкими, души — открытыми, настроение — праздничным, а подарки — упакованными в конверты.</p>
+        
+          <span class="h-8 w-[0.5px] bg-black"></span>
+        
+          <p class="text-center text-[14px] pt-[20px]">По всем вопросам, связанным с торжественным вечером и сюрпризами, обращаться к нашему организатору</p>
         </div>
         <p>Полина</p>
-        <p>+7 (999) 000 00 00</p>
-        <button><a href="">WHATSAPP</a></button>
+        <p class = "font-bold text-[20px]">+7 (999) 000 00 00</p>
+        <button class="w-[230px] border px-[5px] py-[5px]">
+          <a class="text-[17px] uppercase">Whatsapp</a>
+        </button>
       </div>
+    </div>
+
+    <div class = "flex flex-col bg-[#252525]  justify-center items-center text-white font-cormorant py-[50px] px-[50px] gap-[30px]">
+      <p class = "uppercase text-[25px] text-center">До торжества осталось:</p>
+      <div class = "flex flex-row gap-[40px] justify-center items-center">
+        <div>
+        <p class = "font-poiret-one font-bold text-[30px]">152</p>
+        <p>дней</p>
+        </div>
+        <div>
+          <p class = "font-poiret-one font-bold text-[30px]">02</p>
+          <p>часов</p>
+          </div>
+          <div>
+            <p class = "font-poiret-one font-bold text-[30px]">43</p>
+            <p>минут</p>
+            </div>
+            <div>
+              <p class = "font-poiret-one font-bold text-[30px]">05</p>
+              <p>секунд</p>
+              </div>
+      </div>
+
     </div>
     </main>
   </head>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>"date.js"</script>
   <script>
     $(document).ready(function(){
       $('.owl-carousel').owlCarousel({
