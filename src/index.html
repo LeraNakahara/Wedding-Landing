@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
       /* Optional: Customize the height of the items */
       .owl-carousel .item{
@@ -27,117 +29,108 @@
           margin: auto; /* Center the image */
           display: block; /* Required to center image */
       }
+      @media screen and (min-width: 768px) {
+        .owl-carousel .item img {
+          width:400px;
+          height:500px;
+        }
+
+}
+
     </style>
   </head>
   <body class="h-screen box-border m-0 p-0">
     <header class="h-auto bg-[#252525]">
-      <div
-        class="flex flex-col justify-center items-center px-[30px] py-14 font-cormorant"
-      >
-        <p class="text-white uppercase text-[20px] leading-[26px]">
-          Save the date
-        </p>
-        <p class="text-white uppercase text-[25px]">Boris and Alice</p>
-        <div class="flex flex-col items-center py-[80px] font-poiret-one">
-          <div class="relative">
-            <span
-              class="absolute top-1/0.5 left-[30px] transform -translate-y-1/2 h-[3em] w-[0.5px] mt-[-30px] bg-white"
-            ></span>
-            <p class="text-white uppercase font-bold text-[50px]">25</p>
+      <div data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out"
+           class="flex flex-col justify-center items-center px-[30px] py-14 md:border md:border-white md:border- font-cormorant">
+          <p class="text-white tracking-[4px] uppercase text-[20px] leading-[26px] md:text-[27px]">
+              Save the date
+          </p>
+          <p class="text-white text-center tracking-[4px] uppercase text-[22px] md:text-[34px]">Boris and Alice</p>
+          <div class="flex flex-col items-center py-[80px] font-poiret-one">
+              <div class="relative flex flex-col items-center">
+                <span class="h-[80px] w-[0.5px] bg-white md:w-[2px]"></span>
+                  <p class="text-white uppercase font-bold text-[50px] md:text-[70px]">25</p>
+              </div>
+              <p class="text-white uppercase font-bold text-[50px] md:text-[70px]">07</p>
+              <div class="relative flex flex-col items-center">
+                  <p class="text-white uppercase font-bold text-[50px] md:text-[70px]">25</p>
+                  <span class="h-[80px] w-[0.5px] bg-white md:w-[2px]"></span>
+              </div>
           </div>
-          <p class="text-white uppercase font-bold text-[50px]">07</p>
-          <div class="relative">
-            <p class="text-white uppercase font-bold text-[50px]">25</p>
-            <span
-              class="absolute top-1/0.5 right-[30px] transform -translate-y-1/2 h-[3em] w-[0.5px] mt-[30px] bg-white"
-            ></span>
-          </div>
-        </div>
-        <p class="text-white uppercase text-[20px]">our wedding day</p>
+          <p class="text-white uppercase text-[20px] md:text-[28px] tracking-[4px]">our wedding day</p>
       </div>
-    </header>
+  </header>
     <main class="h-auto">
       <div
-        class="flex flex-col justify-center items-center font-cormorant text-center py-[60px] px-[15px] gap-[30px]"
+        class="flex flex-col justify-center items-center font-cormorant text-center py-[50px] px-[50px] gap-[30px] md:px-[300px] md:py-[80px]" data-aos = "zoom-in" data-aos-duration = "1000"
       >
-        <p class="text-[27px] uppercase font-medium">Дорогие друзья и родные</p>
-        <p class="text-[17px] font-regular">
+        <p class="text-[27px] uppercase font-medium md:text-[35px] font-medium">Дорогие друзья и родные</p>
+        <p class="text-[17px] font-regular md:text-[25px]">
           ОДИН ДЕНЬ В ЭТОМ ГОДУ СТАНЕТ ОСОБЕННЫМ ДЛЯ НАШЕЙ СЕМЬИ. И МЫ ХОТИМ
           ПРОВЕСТИ ЕГО В КРУГУ САМЫХ БЛИЗКИХ И ДОРОГИХ ЛЮДЕЙ!
         </p>
-        <p class="text-[17px]">
+        <p class="text-[17px] md:text-[25px]">
           С БОЛЬШИМ УДОВОЛЬСТВИЕМ ПРИГЛАШАЕМ ВАС РАЗДЕЛИТЬ С НАМИ ПРАЗДНИК!
         </p>
-        <p class="text-[22px] uppercase">
+        <p class="text-[22px] uppercase md:text-[30px]">
           <strong>25</strong> июля <strong>2025</strong> года
         </p>
-        <p class="text-[18px] uppercase">
+        <p class="text-[18px] uppercase md:text-[25px]">
           Сбор гостей в <strong> 16:00 </strong>
         </p>
       </div>
       <div
-        class="h-auto w-full bg-[#252525] relative flex flex-col justify-center items-center py-[50px] px-[35px] mt-[230px] gap-[30px] font-cormorant uppercase text-white"
-      >
+        class="min-h-[400px] w-full bg-[#252525] relative flex flex-col justify-center items-center py-[50px] px-[35px] mt-[230px] gap-[30px] font-cormorant uppercase text-white md:px-[340px] gap-[45px]">
         <img
           src="couple.jpg"
           alt="couple"
-          class="absolute left-1/2 -translate-x-1/2 w-5/6 -translate-y-[185%] top-[100%] z-10"
+          class="absolute left-1/2 -translate-x-1/2 w-5/6 translate-y-[-230%] top-[100%] z-10  md:w-[500px] md:h-[550px] md:translate-y-[-190%]"
         />
-        <p class="text-[27px] text-center pt-[150px]">Место проведения</p>
-        <p class="text-center">Галерея современного искусства «Futuro»</p>
-        <p class="text-center">
-          Адрес: ул. рождественская, д.6, Нижний новгород
-        </p>
-        <button class="w-[250px] border px-[10px] py-[5px]">
-          <a class="text-[20px] uppercase">Открыть карту</a>
+        <p class="text-[27px] text-center pt-[150px] md:text-[35px] md:pt-[300px] leading-[35px]" data-aos = "zoom-in" data-aos-duration = "1000">Место проведения</p>
+        <p class="text-center md:leading-[48px] md:text-[30px]" data-aos = "zoom-in"  data-aos-duration = "1000">Галерея современного искусства «Futuro»</p>
+        <p class="text-center md:text-[25px]" data-aos = "zoom-in"  data-aos-duration = "1000">
+          Адрес: ул. рождественская, д.6, Нижний новгород </p>
+        <button class="w-[250px] border px-[10px] py-[5px]" data-aos = "zoom-in"  data-aos-duration = "1000">
+          <a class="text-[20px] uppercase md:text-[24px]">Открыть карту</a>
         </button>
       </div>
 
-      <p
-        class="tracking-[2px] text-center text-[25px] uppercase font-cormorant py-[40px]"
-      >
-        План мероприятия
-      </p>
-      <div class="w-full flex flex-col items-center gap-[50px]">
+    
+      <div class="w-full flex flex-col items-center  py-[50px] px-[50px] md:pb-[80px]">
+        
+      <p class="tracking-[2px] leading-[31px] text-center text-[25px] uppercase font-cormorant md:text-[35px] md:pt-[40px]" >
+      План мероприятия
+    </p>
         <div
-          class="relative flex items-center flex-col pt-[20px] font-cormorant"
-        >
-          <p class="text-2xl text-center">16:00</p>
-          <p class="text-[17px] uppercase">Сбор гостей</p>
+          class="relative flex items-center flex-col gap-[5px]  pt-[30px] pb-[10px] font-cormorant"
+          data-aos = "zoom-in-down">
+          <p class="text-[24px] text-center md:text-[45px] font-medium">16:00</p>
+          <p class="text-[17px] uppercase md:text-[22px]" >Сбор гостей</p>
         </div>
-        <div class="relative flex items-center flex-col font-cormorant">
-          <span
-            class="absolute top-1/0.5 left-[55px] transform -translate-y-1/2 h-[3em] w-[0.5px] mt-[-25px] bg-black"
-          ></span>
-          <p class="text-[24px]">16:30</p>
-          <p class="text-[17px] uppercase">Церемония</p>
+        <div class="relative flex items-center flex-col  pb-[10px]  gap-[5px] font-cormorant" data-aos = "zoom-in-down">
+          <span class="h-8 w-[0.5px] bg-black md:w-[2px]"></span>
+          <p class="text-[24px] text-center md:text-[45px] font-medium">16:30</p>
+          <p class="text-[17px] uppercase md:text-[22px]" >Церемония</p>
         </div>
-        <div class="relative flex items-center flex-col font-cormorant">
-          <span
-            class="absolute top-1/0.5 left-[95px] transform -translate-y-1/2 h-[3em] w-[0.5px] mt-[-25px] bg-black"
-          ></span>
-          <p class="text-[24px]">17:00</p>
-          <p class="text-[17px] uppercase">Праздничный ужин</p>
+        <div class="relative flex items-center  pb-[10px]  gap-[5px] flex-col font-cormorant" data-aos = "zoom-in-down">
+          <span class="h-8 w-[0.5px] bg-black md:w-[2px]"></span>
+          <p class="text-[24px] text-center md:text-[45px] font-medium" >17:00</p>
+          <p class= "text-[17px] uppercase md:text-[22px]" >Праздничный ужин</p>
         </div>
-        <div
-          class="relative flex items-center flex-col pb-[40px] font-cormorant"
-        >
-          <span
-            class="absolute top-1/0.5 left-[95px] transform -translate-y-1/2 h-[3em] w-[0.5px] mt-[-25px] bg-black"
-          ></span>
-          <p class="text-[24px]">23:00</p>
-          <p class="text-[17px] uppercase">Завершение вечера</p>
+        <div class="relative flex items-center gap-[5px] flex-col  font-cormorant" data-aos = "zoom-in-down">
+        <span class="h-8 w-[0.5px] bg-black md:w-[2px]"></span>
+          <p class= "text-[24px] text-center md:text-[45px] font-medium"  >23:00</p>
+          <p class= "text-[17px] uppercase md:text-[22px]" >Завершение вечера</p>
         </div>
       </div>
 
-      <div
-        class="h-auto flex flex-col justify-center items-center gap-[25px] font-cormorant bg-[#252525] text-white py-[50px] px-[50px] "
-      >
-        <p class="uppercase text-[27px]">Дресс-код</p>
-        <p class="text-center text-[14px]">
-          БУДЕМ РАДЫ ВИДЕТЬ ВАС В ВЕЧЕРНИХ И КОКТЕЙЛЬНЫХ НАРЯДАХ TOTAL BLACK.
-        </p>
-        <p class = "uppercase text-[14px] text-center">Ниже представлены идеи для вашего образа:</p>
+      
+      <div class="h-auto flex flex-col justify-center items-center gap-[25px] font-cormorant bg-[#252525] text-white py-[50px] px-[50px] md:px-[250px]">
+        <p class="uppercase text-[27px] md:text-[35px] md:pb-[40px] pt-[20px]"  data-aos-duration = "2000" data-aos = "zoom-in">Дресс-код</p>
+        <p class="text-center text-[14px] md:text-[25px]"  data-aos-duration = "2000" data-aos = "zoom-in">
+          БУДЕМ РАДЫ ВИДЕТЬ ВАС В ВЕЧЕРНИХ И КОКТЕЙЛЬНЫХ НАРЯДАХ TOTAL BLACK.</p>
+        <p class = "uppercase text-[14px] text-center md:text-[25px]" data-aos-duration = "2000" data-aos = "zoom-in">Ниже представлены идеи для вашего образа:</p>
         <div class="owl-carousel owl-theme pt-[30px]">
           <div class="item"><img src="/images/womanblack.png" alt="Image 1" /></div>
           <div class = "item"><img src = "/images/womanblack2.png" alt = "Image 2"></div>
@@ -145,7 +138,6 @@
           <div class = "item"><img src = "/images/womanblack4.png" alt = "Image 4"></div>
           <div class = "item"><img src = "/images/womanblack5.png" alt = "Image 5"></div>
       </div>
-
       <div class="owl-carousel owl-theme">
         <div class="item"><img src="/images/manblack.png" alt="Image 6" /></div>
         <div class = "item"><img src = "/images/manblack2.png" alt = "Image 7"></div>
@@ -155,47 +147,49 @@
     </div>
     </div>
 
-    <div class="flex flex-col items-center justify-center font-cormorant m-auto uppercase gap-[15px] py-[40px] px-[40px]">
-      <p class = "text-[27px]">Детали</p> 
-      <div class="flex flex-col items-center gap-[20px] relative">
+    <div class="flex flex-col items-center justify-center font-cormorant m-auto uppercase gap-[15px] py-[40px] px-[40px] md:px-[300px] md:py-[80px]">
+      <p class = "text-[27px] md:text-[35px] font-medium md:pb-[25px]">Детали</p> 
+      <div class="flex flex-col items-center gap-[20px] pt-[10px] relative" data-aos-duration = "2000" data-aos = "zoom-in-down">
         <div class="flex flex-col justify-center items-center">
-          <p class="text-center text-[14px] pb-[20px]">Нам бы хотелось, чтобы в этот день сердца были легкими, души — открытыми, настроение — праздничным, а подарки — упакованными в конверты.</p>
+          <p class="text-center text-[14px] pb-[20px] md:text-[24px]">Нам бы хотелось, чтобы в этот день сердца были легкими, души — открытыми, настроение — праздничным, а подарки — упакованными в конверты.</p>
         
           <span class="h-8 w-[0.5px] bg-black"></span>
         
-          <p class="text-center text-[14px] pt-[20px]">По всем вопросам, связанным с торжественным вечером и сюрпризами, обращаться к нашему организатору</p>
+          <p class="text-center text-[14px] pt-[20px] md:text-[24px]">По всем вопросам, связанным с торжественным вечером и сюрпризами, обращаться к нашему организатору</p>
         </div>
-        <p>Полина</p>
-        <p class = "font-bold text-[20px]">+7 (999) 000 00 00</p>
-        <button class="w-[230px] border px-[5px] py-[5px]">
-          <a class="text-[17px] uppercase">Whatsapp</a>
+        <p class = "md:text-[23px]">Полина</p>
+        <p class = "font-bold text-[20px] md:text-[25px] md:pb-[15px]">+7 (999) 000 00 00</p>
+        <button class="w-[200px] border px-[5px] py-[5px] md:w-[230px]">
+          <a class="text-[17px] uppercase md:text-[22px]">Whatsapp</a>
         </button>
       </div>
     </div>
 
-    <div class = "flex flex-col bg-[#252525]  justify-center items-center text-white font-cormorant py-[50px] px-[50px] gap-[30px]">
-      <p class = "uppercase text-[25px] text-center">До торжества осталось:</p>
-      <div class = "flex flex-row gap-[40px] justify-center items-center">
-        <div>
-        <p class = "font-poiret-one font-bold text-[30px]">152</p>
+    <div class = "flex flex-col bg-[#252525]  justify-center items-center text-white font-cormorant py-[50px] px-[50px] gap-[30px] md:px-[150px] md:py-[100px]">
+      <p class = "uppercase text-[25px] text-center md:text-[38px]" data-aos-duration = "2000" data-aos = "zoom-in">До торжества осталось:</p>
+      <div class = "flex flex-row gap-[40px] justify-center items-center md:gap-[70px] md:pt-[15px]" data-aos-duration = "2000" data-aos = "zoom-in">
+        <div class = "flex flex-col items-center  md:gap-[5px] md:text-[28px]">
+        <p class = "font-poiret-one font-bold text-[30px] md:text-[75px]" id = "days"></p>
         <p>дней</p>
         </div>
-        <div>
-          <p class = "font-poiret-one font-bold text-[30px]">02</p>
+        <div class = "flex flex-col items-center md:gap-[5px] md:text-[28px]">
+          <p class = "font-poiret-one font-bold text-[30px] md:text-[75px]" id = "hours"></p>
           <p>часов</p>
           </div>
-          <div>
-            <p class = "font-poiret-one font-bold text-[30px]">43</p>
+          <div class = "flex flex-col items-center  md:gap-[5px] md:text-[28px]">
+            <p class = "font-poiret-one font-bold text-[30px] md:text-[75px]" id = "minutes"></p>
             <p>минут</p>
             </div>
-            <div>
-              <p class = "font-poiret-one font-bold text-[30px]">05</p>
+            <div class = "flex flex-col items-center  md:gap-[5px] md:text-[28px]">
+              <p class = "font-poiret-one font-bold text-[30px] md:text-[75px] " id = "seconds"></p>
               <p>секунд</p>
               </div>
       </div>
-
     </div>
+
     </main>
+
+
   </head>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -216,6 +210,13 @@
       })
     })
   </script>
+  <script src = "date.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
   </body>
 
   
