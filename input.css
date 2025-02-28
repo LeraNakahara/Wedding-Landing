@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poiret+One&display=swap");
+
+@theme {
+  --font-poiret-one: "Poiret One", serif;
+  --font-cormorant: "Cormorant", serif;
+}
